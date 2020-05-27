@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+body {
+    font-family: Roboto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: #F44336;
+    background-size: cover;
+    overflow: scroll;
+}
+
+.mainbox {
+    position: relative;
+    width: 500px;
+    height: 500px;
+
+}
+
+#game-title {
+    text-align: center;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid #09693E;
+    overflow: hidden;
+    
+    
+    
+}
+
+span {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.span1 {
+    clip-path: polygon(0 92%, 100% 50%, 0% 8%);
+    background-color:rgb(26, 248, 148);
+    
+    
+    top: 120px;
+    left: 0;
+}
+.span2 { /*polygon(bottomright, upper*/
+    clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+    background-color: #22B573;
+    
+    
+    top: 120px;
+    right: 0;
+}
+.span3 {
+    clip-path: polygon(50% 0%, 6% 100%, 94% 100%);
+    background-color: rgb(3, 107, 60);
+    
+    
+    bottom: 0;
+    left: 120px;
+    
+}
+
+.span4 {
+    clip-path: polygon(50% 100%, 8% 0, 92% 0);
+    background-color: rgb(7, 83, 49);
+    
+    
+    top: 0;
+    left: 120px;
+    
+}
+
+.box2 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(135deg);
+    
+}
+
+#polygon-set-1.button {
+    height: 5.66px;
+    width: 5.66px;
+}
+
+
+span button b{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 24px;
+    text-align: center;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    
+
+}
+
+.spin {
+    position: absolute;
+    top: 110%;
+    left: 43%;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4px solid rgb(7, 83, 49);;
+    background-color: #09693E;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+.spin:active {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+
+}
+
+.formbox {
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    
+}
+
+#title {
+    font-weight: lighter;
+    line-height: 35px;
+    border-color: #09693E;
+    border-radius: 25px;
+    text-align: center;
+    width: 150px;
+}
+
+.name {
+    border-color:#22B573;
+    border-radius: 25px;
+    height: 35px;
+    width: 50px;
+    
+    
+    
+}
+
+.statsbox {
+    display: none;
+    text-align: center;
+    font-size: xx-large;
+
+}
+

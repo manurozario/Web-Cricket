@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Paper Cricket</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="spinner.js"></script>
+        <script type="text/javascript" src="player.js"></script>
+    </head>
+    <body>
+        
+        <div class="mainbox">
+            <div class="header"> <!-- ADD MORE -->
+                <h1 id="game-title"> Paper Cricket </h1>
+            </div>
+            
+            <div class="formbox" id="formbox">
+                <label for="title">Enter your name<br></label>
+                <input type="text" id="title" placeholder="Get Creative!">
+                
+                <br<br><button class="name" onclick="hide()">START</button>
+            </div>
+            <div class="statsbox" id="stats">
+                <h3 id="score"> 
+                    <br> <h3 id="runs"></h3>
+                         <h3 id="overs"></h3>
+                </h2> <!--53/4-->
+                <h2 id="overs"></h2> <!--Over:-->
+            </div>
+            <br>
+            <div class="box">
+                <div class="box1" id="polygon-set-1">
+                    <span class="span1" id="span1"></span>
+                    <span class="span2" id="span2"></span>
+                    <span class="span3" id="span3"></span>
+                    <span class="span4" id="span4"></span>
+                </div>
+                <div class="box2" id="polygon-set-2">
+                    <span class="span1" id="span5"></span>
+                    <span class="span2" id="span6"></span>
+                    <span class="span3" id="span7"></span>
+                    <span class="span4" id="span8"></span>
+                </div>
+            </div>
+            <button class="spin" id="spin-btn" onclick="spinner()">SPIN</button>
+        </div>
+
+        
+        
+    </body>
+
+
+</html> 
+
+<!-- 
+    Make icons for wheel 
+        - 1,2 and 4 dramatic cricket font drawn
+        - Wide,NB: umpire sign
+        - Catch, Bold, LBW: wicket icons drawn from scratch 
+        - batting screen will set all icons to a batting icon to hide the wheel 
+    Strategy: During an over, there are 8 outcomes. After first ball, 
+        - Any outs will put team in pressure, out button will not reset.
+        - 6 button resets at last ball, if run rate over 1, resets at 4th ball
+        - 4 button resets at last ball, if run rate over 0.5 resets at 3rd ball
+        - NB/W resets alternatively. Under pressure button turns into wickets.
+        - 2 consecutive 4s resets 6
+        - 2 6s disables Catch for 1 ball  
+        - Batting bonus/ult: fielder awareness and confidence build up in batter makes one Wicket visible on screen
+        - Bowling bonus/ult:  
+        - Confidence level of players will determine the board, measurement of nervousness and confidence
+            - Some players/characters start off with different levels, they will
+
+
+
+
+
+
+
+
+
+
+
+    -->         
