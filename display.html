@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="spinner.js"></script>
         <script type="text/javascript" src="player.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     </head>
     <body>
         
@@ -24,24 +26,16 @@
                 <h3 id="score"> 
                     <br> <h3 id="runs"></h3>
                          <h3 id="overs"></h3>
+                         <h3 id="result"></h3>
                 </h2> <!--53/4-->
                 <h2 id="overs"></h2> <!--Over:-->
             </div>
+        
             <br>
-            <div class="box">
-                <div class="box1" id="polygon-set-1">
-                    <span class="span1" id="span1"></span>
-                    <span class="span2" id="span2"></span>
-                    <span class="span3" id="span3"></span>
-                    <span class="span4" id="span4"></span>
-                </div>
-                <div class="box2" id="polygon-set-2">
-                    <span class="span1" id="span5"></span>
-                    <span class="span2" id="span6"></span>
-                    <span class="span3" id="span7"></span>
-                    <span class="span4" id="span8"></span>
-                </div>
-            </div>
+            <ul class= "circle" id="circle">
+                
+                
+            </ul>
             <button class="spin" id="spin-btn" onclick="spinner()">SPIN</button>
         </div>
 

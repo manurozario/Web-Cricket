@@ -42,61 +42,6 @@ body {
     
 }
 
-span {
-    width: 50%;
-    height: 50%;
-    display: inline-block;
-    position: absolute;
-}
-
-.span1 {
-    clip-path: polygon(0 92%, 100% 50%, 0% 8%);
-    background-color:rgb(26, 248, 148);
-    
-    
-    top: 120px;
-    left: 0;
-}
-.span2 { /*polygon(bottomright, upper*/
-    clip-path: polygon(100% 92%, 0 50%, 100% 8%);
-    background-color: #22B573;
-    
-    
-    top: 120px;
-    right: 0;
-}
-.span3 {
-    clip-path: polygon(50% 0%, 6% 100%, 94% 100%);
-    background-color: rgb(3, 107, 60);
-    
-    
-    bottom: 0;
-    left: 120px;
-    
-}
-
-.span4 {
-    clip-path: polygon(50% 100%, 8% 0, 92% 0);
-    background-color: rgb(7, 83, 49);
-    
-    
-    top: 0;
-    left: 120px;
-    
-}
-
-.box2 {
-    width: 100%;
-    height: 100%;
-    transform: rotate(135deg);
-    
-}
-
-#polygon-set-1.button {
-    height: 5.66px;
-    width: 5.66px;
-}
-
 
 span button b{
     width: 65px;
@@ -170,3 +115,122 @@ span button b{
 
 }
 
+.circle {
+    position: relative;
+    border: 1px solid #09693E;
+    padding: 0;
+    margin: 1em auto;
+    width: 30em;
+    height: 30em;
+    border-radius: 50%;
+    list-style: none;
+    overflow: hidden;
+    border-width: 1em;
+}
+
+li {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    transform-origin: 0% 100%;
+}
+.text {
+    position: absolute;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    text-align: center;
+    transform: skewY(60deg) rotate(15deg);
+    padding-top: 20px;
+    
+}
+
+li:first-child {
+    transform: rotate(0deg) skewY(-60deg);
+}
+
+li:nth-child(2) {
+    transform: rotate(30deg) skewY(-60deg);
+}
+li:nth-child(3) {
+    transform: rotate(60deg) skewY(-60deg);
+}
+li:nth-child(4) {
+    transform: rotate(90deg) skewY(-60deg);
+}
+li:nth-child(5) {
+    transform: rotate(120deg) skewY(-60deg);
+}
+li:nth-child(6) {
+    transform: rotate(150deg) skewY(-60deg);
+}
+li:nth-child(7) {
+    transform: rotate(180deg) skewY(-60deg);
+}
+li:nth-child(8) {
+    transform: rotate(210deg) skewY(-60deg);
+}
+li:nth-child(9) {
+    transform: rotate(240deg) skewY(-60deg);
+}
+li:nth-child(10) {
+    transform: rotate(270deg) skewY(-60deg);
+}
+li:nth-child(11) {
+    transform: rotate(300deg) skewY(-60deg);
+}
+li:nth-child(12) {
+    transform: rotate(330deg) skewY(-60deg);
+}
+li:first-child .text {
+    background: #22B573;
+}
+li:nth-child(2) .text {
+    background: #22B573;
+}
+li:nth-child(3) .text {
+    background: #22B573;
+}
+li:nth-child(4) .text {
+    background: #22B573;
+}
+li:nth-child(5) .text {
+    background: #22B573;
+}
+li:nth-child(6) .text {
+    background: #22B573;
+}
+li:nth-child(7) .text {
+    background: #22B573;
+}
+li:nth-child(8) .text {
+    background: #22B573;
+}
+li:nth-child(9) .text {
+    background: #22B573;
+}
+li:nth-child(10) .text {
+    background: #22B573;
+}
+li:nth-child(11) .text {
+    background: #22B573;
+}
+li:nth-child(12) .text {
+    background: #22B573;
+}
+
+#first {
+    display: none;
+}
+
+ul li a {
+    display:block;
+    cursor: pointer;
+}
+   
+ul li a:hover { /*, ul li a:focus*/
+    color: lightgreen;
+}

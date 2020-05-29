@@ -35,7 +35,7 @@ function startGame() {
 
     var player = document.getElementById("stats").style.display = "block";
     
-
+    
     // Add name to screen with runs, overs, wickets and target. 
     // Start Game
     // Game Mechanics
@@ -46,3 +46,4 @@ function startGame() {
 function randomTarget() {
     return (Math.floor(Math.random() * (40-16)));
 }
+
